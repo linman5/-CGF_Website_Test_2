@@ -1,0 +1,186 @@
+/* MY WEBSITE/*
+
+/**
+* PROJECT STYLES
+*/
+
+/* Global */
+
+/*
+* {
+  outline: 1px solid red;  use as a design aide 
+}
+*/
+
+/* Body */ 
+body {
+    background-color: #200020;
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: #dedede;
+}
+
+.h1 {
+    font-size: 4.5rem;
+}
+
+.h2 {
+    font-size: 3rem;
+}
+
+.p {
+    font-size: 1.4rem;
+}
+
+/* Template 2 */
+
+.navbar {
+    transition: background .5s; /* smooth background color change */
+}
+
+.navbar.scrolled {
+    /* when navbar has the class of scrolled, change background color */
+	/* adding the class is controlled by javascript - see template2.js */
+    background:  rgba(32, 0, 32, 0.9);
+}
+
+.navbar-brand .logo{ 
+    width: 35px; 
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+      width: 50px;
+    } 
+}
+
+.display-3 {
+    color: #dedede;
+}
+
+.virtual-reality-artist{ 
+    color: #dedede;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.btn {
+    background-color: transparent;
+    color: #ff3d53;
+    padding: 10px;
+    outline: #dedede;
+    margin: 10px, 20px, 10px, 20px;
+}
+
+.btn:hover,
+.btn:active  {
+    background-color: #ff3d53;
+    color: #dedede;
+    padding: 10px;
+    outline: #dedede;
+    margin: 10px, 20px, 10px, 20px;
+}
+  
+.hero2 {
+    position: relative; /* important for positioning of the hero-container */
+    background-color: black;
+    height: 100vh; /* 100% of the viewport height */
+    min-height: 25rem; /* fallback for vh units - equal to 400px in most browsers (16px x 25) */
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero2 .overlay {
+    /* adds a dark scrim over the video */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:  rgba(0, 0, 0, 0.5);
+    z-index: 1; /* important for layering the scrim on top of the video */
+}
+
+
+.hero2 video {
+    /* allow video to adjust to the screen */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0; /* important for layering the video under the scrim and text */
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+  
+.hero2 .container {
+    font-family: 'Baloo Bhaina 2', cursive;
+    position: relative;
+    z-index: 2; /* important for layering the text on top of the scrim and video */
+}
+
+
+.box1 {
+    background-color: #b6dbab;
+    color: #200020;
+}
+
+.box1 .p {
+    word-wrap: normal;
+}
+
+
+.box2 { 
+    background-color: #200020;
+}
+
+.box2 .h1 {
+    color: #dedede;
+}
+
+.card,
+.card-img-top {
+    boreder-radius: 0;
+}
+
+.card {
+    background-color: transparent;
+    width: 100%;
+    border: none
+}
+
+.card-title{
+    font-size: 1rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.card-link {
+    color: #dedede;
+}
+
+.card-link:hover {
+    text-decoration: none;
+    color: #b6dbab;
+}
+
+/* PAGE 2 & 3 */
+
+
+.hero4 {
+    padding-top: 100px;
+}
+
+.hero3 {
+    padding-top: 75px;
+}
+
+.hero3 section {
+    margin-bottom:100px;
+}
